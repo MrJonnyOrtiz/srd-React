@@ -1057,6 +1057,15 @@ const galleries = [
 
 const articles = [
    {
+      id: 9,
+      title: "The Art of Florida Outdoor Living",
+      description:
+         "Florida rightfully earned the nickname Sunshine State with its seemingly endless days of sunshine throughout the year. Many residents embrace the outdoor lifestyle, installing pools and patios to enjoy the warm temperatures in the day and sometimes cool evenings. It takes experience and ...",
+      published: "Published January 2, 2024",
+      length: "2 min read",
+      link: "blog-post-2401.html",
+   },
+   {
       id: 8,
       title: "Revamping Your Florida Kitchen: Modern Designs for Sunshine State Living",
       description:

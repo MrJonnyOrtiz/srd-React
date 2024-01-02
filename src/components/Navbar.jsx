@@ -29,6 +29,7 @@ export default function NavBar() {
          <div className="flex justify-around items-center">
             {/* xs and small nav */}
             <button
+               id="hamburger"
                className="flex flex-col h-12 w-12 border-2 border-white rounded justify-center items-center group md:hidden"
                onClick={() => setIsOpen(!isOpen)}
             >
