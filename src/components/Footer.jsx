@@ -82,7 +82,7 @@ export default function Footer() {
                   Cloud Realm LLC
                </a>
                <br />
-               All Rights Reserved &copy; {new Date().getFullYear()}
+               &copy; {new Date().getFullYear()} All Rights Reserved
             </p>
          </div>
       </footer>
