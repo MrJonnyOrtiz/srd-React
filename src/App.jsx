@@ -56,6 +56,20 @@ const galleries = [
          "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-2022128-IMG_3574.webp",
       galleryImgs: [
          {
+            imgId: 138,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-138-IMG_6234tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-138-IMG_6234.webp",
+            altText:
+               "image of newly added modern white shaker pantry cabinets with crown molding",
+         },
+         {
+            imgId: 137,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-137-IMG_6233tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-137-IMG_6233.webp",
+            altText:
+               "image of entire view of remodeled kitchen with modern white shaker cabinets, crown molding, neutral herringbone tile backsplash, extra large island that seats 4, and white quartz countertop with a little veining",
+         },
+         {
             imgId: 116,
             tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-116-IMG_4605tn.webp",
             img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-116-IMG_4605.webp",
