@@ -313,11 +313,19 @@ export default function Reviews({ galleries }) {
                      <option value="">&darr; Select a remodeled area</option>
                      {
                         // populate the select with the gallery names
-                        galleries.map((gallery) => (
-                           <option value={gallery.galleryName} key={gallery.id}>
-                              {gallery.galleryName}
-                           </option>
-                        ))
+                        [
+                           ...galleries.map((gallery) => (
+                              <option
+                                 value={gallery.galleryName}
+                                 key={gallery.id}
+                              >
+                                 {gallery.galleryName}
+                              </option>
+                           )),
+                           <option value="Whole house" key="Whole house">
+                              Whole house
+                           </option>,
+                        ]
                      }
                   </select>
                   <label className="font-bold text-lg">First name</label>
