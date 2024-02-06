@@ -3,10 +3,6 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function BlogCard({ title, description, published, length, link }) {
-   useEffect(() => {
-      window.gtag("event", title);
-   }, [title]);
-
    return (
       <li className="text-center sm:text-left sm:grid m-3 p-3 border rounded hover:scale-105">
          <h3 className="text-xl font-bold">{title}</h3>
