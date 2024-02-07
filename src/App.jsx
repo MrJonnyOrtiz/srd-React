@@ -659,6 +659,13 @@ const galleries = [
          "https://s3.amazonaws.com/sarasotaremodeling.com-images/c-2022128-C43EF2D1-E07C-4F4B-8030-5AE239D017F3.webp",
       galleryImgs: [
          {
+            imgId: 139,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/e-139-IMG_9104tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/e-139-IMG_9104.webp",
+            altText:
+               "modern light colored brick accent wall for a big screen tv with built in fireplace, and floating shelves",
+         },
+         {
             imgId: 85,
             tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/e-SRD-85tn.webp",
             img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/e-SRD-85.webp",
