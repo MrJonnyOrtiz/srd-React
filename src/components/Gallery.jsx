@@ -84,15 +84,10 @@ function GalleryCard({ galleries, galleryName, galleryHeroImg }) {
          {showGalleryThumbnails ? (
             <div className="grid">
                <div className="flex space-x-2 justify-center">
-                  {/* <div className="grid justify-items-stretch"> */}
                   <h2 className=" text-xl tracking-widest text-center">
                      {galleryName}
                   </h2>
-                  <button
-                     className="text-xs"
-                     // className="text-xs justify-self-end"
-                     onClick={handleClick}
-                  >
+                  <button className="text-xs" onClick={handleClick}>
                      ❌
                   </button>
                </div>
@@ -110,7 +105,7 @@ function GalleryCard({ galleries, galleryName, galleryHeroImg }) {
                   alt="SRD hero"
                   width="100%"
                   height="auto"
-                  className="opacity-50"
+                  className="opacity-50 rounded-xl"
                />
 
                <div className="absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 bg-gray-500/70  ">
