@@ -1078,6 +1078,15 @@ const galleries = [
 
 const articles = [
    {
+      id: 10,
+      title: "Florida Tropical Oasis Bathroom Remodeling Trends",
+      description:
+         "Bathrooms in Florida are more than just a functional space; they can be a sanctuary where we begin and end our days. Florida’s tropical ambiance has homeowners embracing bathroom remodeling trends that transform their spaces into luxurious tropical oases. If you're looking for a soothing and stylish retreat as your Florida bathroom ...",
+      published: "Published February 16, 2024",
+      length: "2 min read",
+      link: "blog-post-2402.html",
+   },
+   {
       id: 9,
       title: "The Art of Florida Outdoor Living",
       description:

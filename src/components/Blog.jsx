@@ -30,7 +30,7 @@ export default function Blog({ articles }) {
                width="150"
                height="auto"
                alt="profile picture of Ron"
-               className="mx-auto mt-3"
+               className="mx-auto mt-3 rounded-lg"
             />
             <p className="m-3 pb-5">
                Ron Canterbury is President and co-founder of Sarasota Remodeling
