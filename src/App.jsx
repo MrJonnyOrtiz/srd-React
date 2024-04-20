@@ -4,6 +4,7 @@ import AppLayout from "./components/AppLayout";
 import Home from "./components/Home";
 import Services from "./components/Services";
 import Gallery from "./components/Gallery";
+import Feature from "./components/Feature";
 import Contact from "./components/Contact";
 import Reviews from "./components/Reviews";
 import Blog from "./components/Blog";
@@ -45,6 +46,335 @@ const services = [
       serviceName: "Aging-in-place Remodeling",
       serviceDescription:
          "Modifications to make it more accommodating and accessible for seniors.",
+   },
+];
+
+const features = [
+   {
+      id: 1,
+      featureName: "Modern Design",
+      featureDescription:
+         "This modern design is a combination of clean lines and modern materials.",
+      featureHeroImg:
+         "https://s3.amazonaws.com/sarasotaremodeling.com-images/owner.webp",
+
+      images: [
+         {
+            imgId: 40,
+            type: "beforeAfter",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomUpstairs2BeforeAfterTN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomUpstairs2BeforeAfter.webp",
+            altText: "before and after of a renovated fourth bathroom",
+         },
+         {
+            imgId: 39,
+            type: "beforeAfter",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomUpstairs1BeforeAfter1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomUpstairs1BeforeAfter1.webp",
+            altText: "before and after of a remodeled third bathroom",
+         },
+         {
+            imgId: 38,
+            type: "beforeAfter",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/kitchenBeforeAfter1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/kitchenBeforeAfter1.webp",
+            altText: "before and after of renovated kitchen",
+         },
+         {
+            imgId: 37,
+            type: "beforeAfter",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/diningRoomBeforeAfterTN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/diningRoomBeforeAfter.webp",
+            altText: "before and after of remodeled dining room",
+         },
+         {
+            imgId: 36,
+            type: "beforeAfter",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoom1BeforeAfterTN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoom1BeforeAfter.webp",
+            altText: "before and after of renovated primary bathroom",
+         },
+         {
+            imgId: 35,
+            type: "beforeAfter",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/foyerBeforeAfterTN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/foyerBeforeAfter.webp",
+            altText: "before and after of remodeled foyer",
+         },
+         {
+            imgId: 34,
+            type: "beforeAfter",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomUpstairs1BeforeAfter1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomUpstairs1BeforeAfter1.webp",
+            altText: "before and after of renovated secondary bathroom",
+         },
+         {
+            imgId: 33,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/entranceTN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/entrance.webp",
+            altText: "remodeled grand entrance",
+         },
+         {
+            imgId: 32,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/foyerTN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/foyer.webp",
+            altText: "renovated foyer",
+         },
+         {
+            imgId: 31,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/livingRoom1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/livingRoom1.webp",
+            altText: "remodeled main living space photo 1",
+         },
+         {
+            imgId: 30,
+            type: "after",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/livingRoom2TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/livingRoom2.webp",
+            altText: "remodeled main living space photo 2",
+         },
+         {
+            imgId: 29,
+            type: "after",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/kitchen1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/kitchen1.webp",
+            altText:
+               "renovated large open concept kitchen with massive island photo 1",
+         },
+         {
+            imgId: 28,
+            type: "after",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/kitchen2TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/kitchen2.webp",
+            altText:
+               "renovated large open concept kitchen with massive island photo 2",
+         },
+         {
+            imgId: 27,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/kitchen3TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/kitchen3.webp",
+            altText:
+               "renovated large open concept kitchen with massive island photo 3",
+         },
+         {
+            imgId: 26,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/wetbarTN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/wetbar.webp",
+            altText: "remodeled wetbar off the kitchen and pantry",
+         },
+         {
+            imgId: 25,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/pantryTN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/pantry.webp",
+            altText: "renovated butler's pantry off the kitchen",
+         },
+         {
+            imgId: 24,
+            type: "after",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/diningRoom1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/diningRoom1.webp",
+            altText: "remodeled dining room photo 1",
+         },
+         {
+            imgId: 23,
+            type: "after",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/diningRoom2TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/diningRoom2.webp",
+            altText: "remodeled dining room photo 2",
+         },
+         {
+            imgId: 22,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomI1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomI1.webp",
+            altText: "renovated primary bathroom photo 1",
+         },
+         {
+            imgId: 21,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomI2TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomI2.webp",
+            altText: "renovated primary bathroom photo 2",
+         },
+         {
+            imgId: 20,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomI3TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomI3.webp",
+            altText: "renovated primary bathroom photo 3",
+         },
+         {
+            imgId: 19,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomI4TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomI4.webp",
+            altText: "renovated primary bathroom photo 4",
+         },
+         {
+            imgId: 18,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomI5TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomI5.webp",
+            altText: "renovated primary bathroom photo 5",
+         },
+         {
+            imgId: 17,
+            type: "after",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bedRoomIITN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bedRoomII.webp",
+            altText: "remodeled bedroom 2",
+         },
+         {
+            imgId: 16,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomII1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomII1.webp",
+            altText: "renovated bathroom 2 photo 1",
+         },
+         {
+            imgId: 15,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomII2TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomII2.webp",
+            altText: "renovated bathroom 2 photo 2",
+         },
+         {
+            imgId: 14,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomII3TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomII3.webp",
+            altText: "renovated bathroom 2 photo 3",
+         },
+         {
+            imgId: 13,
+            type: "after",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bedRoomIII1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bedRoomIII1.webp",
+            altText: "remodeled bedroom 3 photo 1",
+         },
+         {
+            imgId: 12,
+            type: "after",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bedRoomIII2TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bedRoomIII2.webp",
+            altText: "remodeled bedroom 3 photo 2",
+         },
+         {
+            imgId: 11,
+            type: "after",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bedRoomIII3TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bedRoomIII3.webp",
+            altText: "remodeled bedroom 3 photo 3",
+         },
+         {
+            imgId: 10,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomIII1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomIII1.webp",
+            altText: "renovated cozy 3rd bathroom photo 1",
+         },
+         {
+            imgId: 9,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomIII2TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomIII2.webp",
+            altText: "renovated cozy 3rd bathroom photo 2",
+         },
+         {
+            imgId: 8,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomIV1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomIV1.webp",
+            altText: "renovated 4th bathroom with double vanity",
+         },
+         {
+            imgId: 7,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomIV2TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomIV2.webp",
+            altText: "renovated 4th bathroom where closet converted to shower",
+         },
+         {
+            imgId: 6,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomIV3TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/bathRoomIV3.webp",
+            altText: "renovated shower in 4th bathroom",
+         },
+         {
+            imgId: 5,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/deck1TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/deck1.webp",
+            altText: "deck with renovated ceiling photo 1",
+         },
+         {
+            imgId: 4,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/deck2TN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/deck2.webp",
+            altText: "deck with renovated ceiling photo 2",
+         },
+         {
+            imgId: 3,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/laundryTN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/laundry.webp",
+            altText: "remodeled laundry room",
+         },
+         {
+            imgId: 2,
+            type: "after",
+            orientation: "portrait",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/livingRoomIITN.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/livingRoomII.webp",
+            altText: "cozy living space off the kitchen",
+         },
+      ],
    },
 ];
 
@@ -1187,6 +1517,10 @@ function App() {
                      element={<Gallery galleries={galleries} />}
                   />
                   <Route path="contact" element={<Contact />} />
+                  <Route
+                     path="feature"
+                     element={<Feature features={features} />}
+                  />
                   <Route path="blog" element={<Blog articles={articles} />} />
                   <Route
                      path="reviews"
