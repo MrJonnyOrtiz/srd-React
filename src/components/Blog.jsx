@@ -1,6 +1,18 @@
 import { useEffect } from "react";
-
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+
+BlogCard.propTypes = {
+   title: PropTypes.string,
+   description: PropTypes.string,
+   published: PropTypes.string,
+   length: PropTypes.string,
+   link: PropTypes.string,
+};
+
+Blog.propTypes = {
+   articles: PropTypes.array,
+};
 
 function BlogCard({ title, description, published, length, link }) {
    return (

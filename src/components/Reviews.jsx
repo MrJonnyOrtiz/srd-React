@@ -1,6 +1,20 @@
 import { useEffect, useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import Loading from "./Loading";
+import PropTypes from "prop-types";
+
+ReviewCard.propTypes = {
+   remodelArea: PropTypes.string,
+   fName: PropTypes.string,
+   lInit: PropTypes.string,
+   review: PropTypes.string,
+   stars: PropTypes.string,
+   reviewDate: PropTypes.string,
+};
+
+Reviews.propTypes = {
+   galleries: PropTypes.array,
+};
 
 function ReviewCard({ remodelArea, fName, lInit, review, stars, reviewDate }) {
    const getStars = (rating) => {

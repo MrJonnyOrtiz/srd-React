@@ -1408,6 +1408,15 @@ const galleries = [
 
 const articles = [
    {
+      id: 11,
+      title: "Hurricane-Ready Homes: Essential Tips for Florida Residents",
+      description:
+         "Living in Florida offers many perks, from sunny beaches to vibrant communities and attractions such as Disney World. However, the state's coastal location also means facing the yearly threat of hurricanes. As a Florida resident, preparing your home for hurricane season ...",
+      published: "Published February 16, 2024",
+      length: "2 min read",
+      link: "blog-post-2404.html",
+   },
+   {
       id: 10,
       title: "Florida Tropical Oasis Bathroom Remodeling Trends",
       description:

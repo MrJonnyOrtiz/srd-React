@@ -1,4 +1,14 @@
 import { useEffect } from "react";
+import PropTypes from "prop-types";
+
+ServiceCard.propTypes = {
+   serviceName: PropTypes.string,
+   serviceDescription: PropTypes.string,
+};
+
+Services.propTypes = {
+   services: PropTypes.array,
+};
 
 function ServiceCard({ serviceName, serviceDescription }) {
    return (

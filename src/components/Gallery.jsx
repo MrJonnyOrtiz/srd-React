@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 import GalleryCard from "./GalleryCard";
+import PropTypes from "prop-types";
+
+Gallery.propTypes = {
+   galleries: PropTypes.array,
+};
 
 export default function Gallery({ galleries = [] }) {
    return (

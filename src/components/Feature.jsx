@@ -1,5 +1,10 @@
 import { useEffect } from "react";
 import FeatureCard from "./FeatureCard";
+import PropTypes from "prop-types";
+
+Feature.propTypes = {
+   features: PropTypes.array,
+};
 
 function Feature({ features }) {
    useEffect(() => {
