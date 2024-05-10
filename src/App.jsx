@@ -1511,7 +1511,7 @@ const articles = [
 
 function App() {
    return (
-      <div className="text-white">
+      <div className="text-white h-dvh">
          <BrowserRouter>
             <Routes>
                <Route element={<AppLayout />}>

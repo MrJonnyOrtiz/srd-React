@@ -1,4 +1,11 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
+
+AreaImage.propTypes = {
+   tn: PropTypes.string,
+   img: PropTypes.string,
+   altText: PropTypes.string,
+};
 
 export default function AreaImage({ tn, img, altText }) {
    const [showModal, setShowModal] = useState(false);

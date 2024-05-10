@@ -28,7 +28,7 @@ export default function Services({ services = [] }) {
    }, []);
 
    return (
-      <div className="px-5">
+      <div className="grid grid-cols-1 gap-3 px-5">
          <h2 className="text-3xl font-bold text-center mt-5">Services</h2>
          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 justify-items-center">
             {services.map((service) => (
@@ -39,6 +39,14 @@ export default function Services({ services = [] }) {
                />
             ))}
          </ul>
+         <div className="text-center my-5">
+            <a
+               href="tel:9413130263"
+               className="bg-white text-black font-semibold hover:bg-black hover:border-4 hover:text-white px-4 py-2 rounded-xl animate-pulse"
+            >
+               GET A FREE QUOTE!
+            </a>
+         </div>
       </div>
    );
 }

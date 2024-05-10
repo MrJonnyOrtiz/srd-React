@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import AreaImage from "./AreaImage";
 
+import PropTypes from "prop-types";
+
+AreaImagesList.propTypes = {
+   galleries: PropTypes.array,
+   galleryName: PropTypes.string,
+};
+
 export default function AreaImagesList({ galleries, galleryName }) {
    const [showModal, setShowModal] = useState(false);
 

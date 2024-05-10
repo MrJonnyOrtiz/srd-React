@@ -2,6 +2,14 @@ import { useState } from "react";
 
 import AreaImagesList from "./AreaImagesList";
 
+import PropTypes from "prop-types";
+
+GalleryCard.propTypes = {
+   galleries: PropTypes.array,
+   galleryName: PropTypes.string,
+   galleryHeroImg: PropTypes.string,
+};
+
 export default function GalleryCard({
    galleries,
    galleryName,
@@ -36,9 +44,8 @@ export default function GalleryCard({
                <img
                   src={galleryHeroImg}
                   alt="SRD hero"
-                  width="100%"
                   height="auto"
-                  className="opacity-50 rounded-xl"
+                  className="opacity-50 rounded-xl mx-auto w-1/2 sm:w-3/4"
                />
 
                <div className="absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 bg-gray-500/70  ">

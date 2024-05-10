@@ -1,5 +1,12 @@
 import { useState } from "react";
 
+// import prop types
+import PropTypes from "prop-types";
+
+FeatureCard.propTypes = {
+   feature: PropTypes.object,
+};
+
 function FeatureCard({ feature }) {
    const [showModal, setShowModal] = useState(false);
    const [modalImage, setModalImage] = useState({});
@@ -22,7 +29,11 @@ function FeatureCard({ feature }) {
             />
          </div>
          <div className="flex gap-1 items-center justify-center m-2">
-            Click an image for a larger view
+            <span className="relative flex w-3 h-3">
+               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+               <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+            </span>
+            <span className="px-1">Click an image for a larger view</span>
             <span className="relative flex w-3 h-3">
                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
