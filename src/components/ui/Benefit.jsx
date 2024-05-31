@@ -7,8 +7,8 @@ Benefit.propTypes = {
 
 export default function Benefit({ text }) {
    return (
-      <div>
-         <p className="font-semibold rounded-md px-2 py-1 bg-slate-50/50  showup">
+      <div className="text-center">
+         <p className="font-semibold rounded-md px-2 py-1 bg-slate-50/50">
             {text}
          </p>
       </div>

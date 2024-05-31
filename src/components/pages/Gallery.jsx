@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import GalleryCard from "./GalleryCard";
+import GalleryCard from "../ui/GalleryCard";
 import PropTypes from "prop-types";
 
 Gallery.propTypes = {

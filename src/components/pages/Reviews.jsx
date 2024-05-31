@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import Loading from "./Loading";
+import Loading from "../ui/Loading";
 import PropTypes from "prop-types";
 
 ReviewCard.propTypes = {

@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import AppLayout from "./components/AppLayout";
-import Home from "./components/Home";
-import Services from "./components/Services";
-import Gallery from "./components/Gallery";
-import Feature from "./components/Feature";
-import Contact from "./components/Contact";
-import Reviews from "./components/Reviews";
-import Blog from "./components/Blog";
-import PageNotFound from "./components/PageNotFound";
+import AppLayout from "./components/ui/AppLayout";
+import Home from "./components/pages/Home";
+import Services from "./components/pages/Services";
+import Gallery from "./components/pages/Gallery";
+import Feature from "./components/pages/Feature";
+import Contact from "./components/pages/Contact";
+import Reviews from "./components/pages/Reviews";
+import Blog from "./components/pages/Blog";
+import PageNotFound from "./components/pages/PageNotFound";
 
 const services = [
    {

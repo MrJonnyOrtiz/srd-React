@@ -6,7 +6,7 @@ body {
    background-color: black;
 }
 .slideOut {
-   animation: 7s slideOut forwards;
+   animation: 5s slideOut forwards;
 }
 
 .showup:nth-child(1) {
