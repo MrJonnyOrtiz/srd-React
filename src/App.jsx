@@ -1408,6 +1408,15 @@ const galleries = [
 
 const articles = [
    {
+      id: 12,
+      title: "Florida's Year-Round Paradise: Sunroom Additions and Lanais",
+      description:
+         "Florida’s enviable weather is a constant draw for residents and visitors alike, offering sunshine and warmth for most of the year. Did you know the average temperature in the Tampa Bay area is  ...",
+      published: "Published August 29, 2024",
+      length: "4 min read",
+      link: "blog-post-2408.html",
+   },
+   {
       id: 11,
       title: "Hurricane-Ready Homes: Essential Tips for Florida Residents",
       description:
