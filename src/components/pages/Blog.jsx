@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import PaginationButtons from "../ui/PaginationButtons";
 import PropTypes from "prop-types";
 
 BlogCard.propTypes = {
@@ -30,6 +31,15 @@ function BlogCard({ title, description, published, length, link }) {
 }
 
 export default function Blog({ articles }) {
+   const [currentPage, setCurrentPage] = useState(1);
+
+   const PAGE_SIZE = 4;
+   const indexOfLastItem = currentPage * PAGE_SIZE;
+   const indexOfFirstItem = indexOfLastItem - PAGE_SIZE;
+   const currentArticles = articles?.slice(indexOfFirstItem, indexOfLastItem);
+
+   const handleCurrentPage = (page) => setCurrentPage(page);
+
    useEffect(() => {
       window.gtag("event", "blogsPage");
    }, []);
@@ -68,7 +78,7 @@ export default function Blog({ articles }) {
                Blog articles
             </h2>
             <ul className="">
-               {articles.map((article) => (
+               {currentArticles.map((article) => (
                   <BlogCard
                      key={article.id}
                      title={article.title}
@@ -79,6 +89,11 @@ export default function Blog({ articles }) {
                   />
                ))}
             </ul>
+            <PaginationButtons
+               totalPages={Math.ceil(articles?.length / PAGE_SIZE)}
+               currentPage={currentPage}
+               handleCurrentPage={handleCurrentPage}
+            />
          </div>
       </div>
    );
