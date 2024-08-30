@@ -55,7 +55,7 @@ export default function NavBar() {
             </button>
             {isOpen && (
                <>
-                  <ul className="flex  items-center gap-3 md:hidden">
+                  <ul className="flex items-center gap-3 md:hidden">
                      <li>
                         <Link to="/services" onClick={() => setIsOpen(!isOpen)}>
                            Services
@@ -85,20 +85,20 @@ export default function NavBar() {
                </>
             )}
             {/* md and large nav */}
-            <ul className="hidden md:flex space-x-8">
-               <li className="hover:bg-white hover:text-black hover:px-2 hover:font-bold">
+            <ul className="hidden md:flex space-x-8 md:gap-3">
+               <li className="hover:bg-white hover:text-black md:px-2 md:py-2 rounded-lg font-bold">
                   <Link to="/services">Services</Link>
                </li>
-               <li className="hover:bg-white hover:text-black hover:px-2 hover:font-bold">
+               <li className="hover:bg-white hover:text-black md:px-2 md:py-2 rounded-lg font-bold">
                   <Link to="/gallery">Gallery</Link>
                </li>
-               <li className="hover:bg-white hover:text-black hover:px-2 hover:font-bold">
+               <li className="hover:bg-white hover:text-black md:px-2 md:py-2 rounded-lg font-bold">
                   <Link to="/contact">Contact</Link>
                </li>
-               <li className="hover:bg-white hover:text-black hover:px-2 hover:font-bold">
+               <li className="hover:bg-white hover:text-black md:px-2 md:py-2 rounded-lg font-bold">
                   <Link to="/blog">Blog</Link>
                </li>
-               <li className="hover:bg-white hover:text-black hover:px-2 hover:font-bold">
+               <li className="hover:bg-white hover:text-black md:px-2 md:py-2 rounded-lg font-bold">
                   <Link to="/reviews">Reviews</Link>
                </li>
             </ul>
