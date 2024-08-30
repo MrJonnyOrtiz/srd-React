@@ -1,25 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Benefit from "../ui/Benefit";
 import CTA from "../ui/CTA";
 
 export default function Home() {
-   const [showBtn, setShowBtn] = useState(false);
-
-   // show button after 10 seconds
-   useEffect(() => {
-      setTimeout(() => setShowBtn(true), 6000);
-   }, []);
-
    useEffect(() => {
       window.gtag("event", "homePage");
    }, []);
 
    const text1 = "2024 SRQ Magazine Bronze Winner Best Contractor, Residential";
-   // const text1 = "From design to construction";
    const text2 = "2024 SRQ Magazine Platinum Winner Best Kitchen Designer";
-   // const text2 = "Unparalleled workmanship";
    const text3 = "2024 SRQ Magazine Platinum Winner Best Bathroom Remodeler";
-   // const text3 = "Sarasota's top rated contractor";
 
    return (
       <div className="grid grid-cols-1 gap-3  md:grid-cols-2">
@@ -55,7 +45,6 @@ export default function Home() {
 
          {/* benefits */}
          <div className="flex flex-col items-center justify-start gap-3 md:gap-4 text-sm sm:text-lg md:text-xl md:order-1 lg:text-2xl">
-            {/* <div className="grid grid-cols-1 gap-2 md:gap-4 max-w-prose mx-auto text-center text-sm sm:text-lg md:text-2xl inset-x-0 top-1/4"> */}
             <h1 className="text-2xl md:text-4xl lg:text-6xl md:p-4 lg:p-6 italic md:mt-6">
                Why choose us?
             </h1>
@@ -68,13 +57,10 @@ export default function Home() {
             <div className="flex items-center justify-center w-3/4 ">
                <Benefit text={text1} />
             </div>
-         </div>
-
-         {showBtn && (
             <div className="flex items-center justify-center md:col-span-2 md:order-3">
                <CTA />
             </div>
-         )}
+         </div>
       </div>
    );
 }
