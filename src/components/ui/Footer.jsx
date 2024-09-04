@@ -1,6 +1,6 @@
 export default function Footer() {
    return (
-      <footer className="grid grid-cols-1 md:grid-cols-3  bg-gray-600 p-3">
+      <footer className="grid grid-cols-1 md:grid-cols-3  bg-gray-800 p-3">
          <div className="m-3 text-center md:text-left">
             <h2 className="text-lg font-bold">
                Sarasota Remodeling & Design LLC

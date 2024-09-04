@@ -40,7 +40,7 @@ export default function Services({ services = [] }) {
                />
             ))}
          </ul>
-         <div className="text-center my-5">
+         <div className="text-center my-5 md:hidden">
             <CTA />
          </div>
       </div>
