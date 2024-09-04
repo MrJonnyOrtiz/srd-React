@@ -14,9 +14,11 @@ export default function Home() {
    return (
       <div className="grid grid-cols-1 gap-3">
          {/* headline  */}
-         <h1 className="text-2xl md:text-5xl text-center pt-3">
-            Transforming Spaces with Award-Winning Design & Craftsmanship
-         </h1>
+         <div className="max-w-prose mx-auto">
+            <h1 className="text-2xl md:text-4xl pt-3 text-center">
+               Transforming Spaces with Award-Winning Design & Craftsmanship
+            </h1>
+         </div>
 
          {/* hero image, curtain, and SRQ Magazine badge */}
          <div className="">
