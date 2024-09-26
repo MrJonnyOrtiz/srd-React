@@ -386,6 +386,34 @@ const galleries = [
          "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-2022128-IMG_3574.webp",
       galleryImgs: [
          {
+            imgId: 143,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-143tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-143.webp",
+            altText:
+               "different angle of newly remodeled kitchen's butler pantry image with modern pine shaker cabinets and open shelves",
+         },
+         {
+            imgId: 142,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-142tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-142.webp",
+            altText:
+               "image of newly remodeled kitchen's butler pantry with modern pine shaker cabinets and open shelves",
+         },
+         {
+            imgId: 141,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-141tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-141.webp",
+            altText:
+               "image of newly remodeled kitchen with modern white shaker cabinets with glass uppers",
+         },
+         {
+            imgId: 140,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-140tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-140.webp",
+            altText:
+               "image of newly remodeled kitchen with modern white shaker cabinets, new counter tops, and extra large island",
+         },
+         {
             imgId: 138,
             tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-138-IMG_6234tn.webp",
             img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-138-IMG_6234.webp",
