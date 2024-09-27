@@ -58,17 +58,18 @@ export default function CookieConsentBanner() {
    if (isConsentGiven) return null;
 
    return (
-      <div className="fixed bottom-4 right-4 w-20 h-20 bg-white text-black rounded-lg shadow-lg z-50 flex items-center justify-center">
+      <div className="fixed bottom-4 right-4 w-20 h-22 bg-white text-black rounded-lg shadow-lg z-50 flex items-center justify-center text-sm flex-col">
+         <div className="px-1 py-1 text-center">Accept cookies</div>
          <button
             onClick={handleAccept}
             className="bg-green-500 text-black font-semibold px-2 py-1 text-xs rounded-md"
             aria-label="Accept cookies"
          >
-            Accept Cookies
+            Yes
          </button>
          <Link
             to="/privacy-policy"
-            className="absolute bottom-1 right-1 text-xs text-black underline"
+            className="text-xs text-black underline"
             aria-label="Learn more about our privacy policy"
          >
             ?
