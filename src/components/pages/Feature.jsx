@@ -8,7 +8,12 @@ Feature.propTypes = {
 
 function Feature({ features }) {
    useEffect(() => {
-      window.gtag("event", "featurePage");
+      // Check if the user has given consent for analytics in localStorage
+      const isConsentGiven = localStorage.getItem("cookieConsent") === "true";
+
+      if (isConsentGiven && window.gtag) {
+         window.gtag("event", "featurePage");
+      }
    }, []);
 
    return (

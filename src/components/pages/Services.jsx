@@ -25,7 +25,12 @@ function ServiceCard({ serviceName, serviceDescription }) {
 
 export default function Services({ services = [] }) {
    useEffect(() => {
-      window.gtag("event", "servicesPage");
+      // Check if the user has given consent for analytics in localStorage
+      const isConsentGiven = localStorage.getItem("cookieConsent") === "true";
+
+      if (isConsentGiven && window.gtag) {
+         window.gtag("event", "servicesPage");
+      }
    }, []);
 
    return (

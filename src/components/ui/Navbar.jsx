@@ -73,6 +73,7 @@ export default function NavBar() {
                      <Link
                         to={item.path}
                         onClick={() => setIsOpen((o) => (o = !o))}
+                        aria-label={item.label}
                      >
                         {item.label}
                      </Link>
@@ -94,7 +95,9 @@ export default function NavBar() {
                   key={item.path}
                   className="hover:bg-white hover:text-black px-2 py-2 rounded-lg"
                >
-                  <Link to={item.path}>{item.label}</Link>
+                  <Link to={item.path} aria-label={item.label}>
+                     {item.label}
+                  </Link>
                </li>
             ))}
             <a

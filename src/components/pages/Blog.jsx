@@ -41,7 +41,12 @@ export default function Blog({ articles }) {
    const handleCurrentPage = (page) => setCurrentPage(page);
 
    useEffect(() => {
-      window.gtag("event", "blogsPage");
+      // Check if the user has given consent for analytics in localStorage
+      const isConsentGiven = localStorage.getItem("cookieConsent") === "true";
+
+      if (isConsentGiven && window.gtag) {
+         window.gtag("event", "blogsPage");
+      }
    }, []);
 
    return (

@@ -223,7 +223,12 @@ export default function Reviews({ galleries }) {
    }, []);
 
    useEffect(() => {
-      window.gtag("event", "reviewsPage");
+      // Check if the user has given consent for analytics in localStorage
+      const isConsentGiven = localStorage.getItem("cookieConsent") === "true";
+
+      if (isConsentGiven && window.gtag) {
+         window.gtag("event", "reviewsPage");
+      }
    }, []);
 
    const postReview = async (e) => {

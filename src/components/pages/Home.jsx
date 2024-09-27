@@ -4,7 +4,12 @@ import CTA from "../ui/CTA";
 
 export default function Home() {
    useEffect(() => {
-      window.gtag("event", "homePage");
+      // Check if the user has given consent for analytics in localStorage
+      const isConsentGiven = localStorage.getItem("cookieConsent") === "true";
+
+      if (isConsentGiven && window.gtag) {
+         window.gtag("event", "homePage");
+      }
    }, []);
 
    const text1 = "2024 SRQ Magazine Bronze Winner Best Contractor, Residential";

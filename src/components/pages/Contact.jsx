@@ -88,13 +88,18 @@ export default function Contact() {
       }
    };
 
-   function handleOnChange(value) {
+   function handleOnChange() {
       setHasCaptchaToken(true);
       setError("");
    }
 
    useEffect(() => {
-      window.gtag("event", "contactPage");
+      // Check if the user has given consent for analytics in localStorage
+      const isConsentGiven = localStorage.getItem("cookieConsent") === "true";
+
+      if (isConsentGiven && window.gtag) {
+         window.gtag("event", "contactPage");
+      }
    }, []);
 
    return (
