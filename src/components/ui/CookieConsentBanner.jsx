@@ -62,12 +62,14 @@ export default function CookieConsentBanner() {
          <button
             onClick={handleAccept}
             className="bg-green-500 text-white px-2 py-1 text-xs rounded-md"
+            aria-label="Accept cookies"
          >
             Accept Cookies
          </button>
          <Link
             to="/privacy-policy"
             className="absolute bottom-1 right-1 text-xs text-black underline"
+            aria-label="Learn more about our privacy policy"
          >
             ?
          </Link>
