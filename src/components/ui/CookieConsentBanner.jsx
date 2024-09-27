@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function CookieConsentBanner() {
    const [isConsentGiven, setIsConsentGiven] = useState(false);
+   const [isBannerVisible, setIsBannerVisible] = useState(true);
+   const [isExpanded, setIsExpanded] = useState(false);
 
    useEffect(() => {
       // Check for existing consent in localStorage
@@ -10,6 +12,7 @@ export default function CookieConsentBanner() {
 
       if (consent === "true") {
          setIsConsentGiven(true);
+         setIsBannerVisible(false);
          loadGoogleAnalytics();
          loadGoogleTagManager();
       }
@@ -19,6 +22,7 @@ export default function CookieConsentBanner() {
       // Save consent in localStorage
       localStorage.setItem("cookieConsent", "true");
       setIsConsentGiven(true);
+      setIsBannerVisible(false);
 
       // Load third-party scripts
       loadGoogleAnalytics();
@@ -54,26 +58,66 @@ export default function CookieConsentBanner() {
       })(window, document, "script", "dataLayer", "GTM-KKXLD2P8");
    };
 
-   // If consent is given, do not show the banner
-   if (isConsentGiven) return null;
+   const toggleExpand = () => {
+      setIsExpanded(!isExpanded);
+   };
+
+   // If consent is given or the banner is not visible, do not show the banner
+   if (!isBannerVisible) return null;
 
    return (
-      <div className="fixed bottom-4 right-4 w-20 h-22 bg-white text-black rounded-lg shadow-lg z-50 flex items-center justify-center text-sm flex-col">
-         <div className="px-1 py-1 text-center">Accept cookies</div>
+      <div
+         className={`fixed bottom-4 right-4 w-64 p-3 bg-gray-800 text-white rounded-lg shadow-md z-50 transition-all ${
+            isExpanded ? "h-auto" : "h-12"
+         }`}
+      >
+         {/* Expand/Collapse Button */}
          <button
-            onClick={handleAccept}
-            className="bg-green-500 text-black font-semibold px-2 py-1 text-xs rounded-md"
-            aria-label="Accept cookies"
+            onClick={toggleExpand}
+            className="absolute top-0 right-1 text-white text-lg"
+            aria-label={
+               isExpanded
+                  ? "Minimize cookie consent banner"
+                  : "Expand cookie consent banner"
+            }
          >
-            Yes
+            {isExpanded ? "−" : "+"}
          </button>
-         <Link
-            to="/privacy-policy"
-            className="text-xs text-black underline"
-            aria-label="Learn more about our privacy policy"
-         >
-            ?
-         </Link>
+
+         {isExpanded ? (
+            <>
+               <div className="text-center text-sm mb-2">
+                  We use cookies to enhance your experience and improve website
+                  functionality and content.
+               </div>
+               <div className="flex gap-2 items-center justify-center">
+                  <button
+                     onClick={handleAccept}
+                     className="bg-green-500 text-black font-semibold px-3 py-1 rounded-md mb-2"
+                     aria-label="Accept cookies"
+                  >
+                     Accept
+                  </button>
+                  <Link
+                     to="/privacy-policy"
+                     className="text-xs text-white underline"
+                     aria-label="Learn more about our privacy policy"
+                  >
+                     Privacy policy
+                  </Link>
+               </div>
+            </>
+         ) : (
+            <div className="text-center text-sm">
+               We use cookies.{" "}
+               <span
+                  className="underline cursor-pointer"
+                  onClick={toggleExpand}
+               >
+                  Privacy policy
+               </span>
+            </div>
+         )}
       </div>
    );
 }
