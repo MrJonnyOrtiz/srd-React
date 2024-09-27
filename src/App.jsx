@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import AppLayout from "./components/ui/AppLayout";
+import CookieConsentBanner from "./components/ui/CookieConsentBanner";
+import PrivacyPolicy from "./components/ui/PrivacyPolicy";
 import Home from "./components/pages/Home";
 import Services from "./components/pages/Services";
 import Gallery from "./components/pages/Gallery";
@@ -1550,6 +1552,7 @@ function App() {
    return (
       <div className="text-white h-dvh">
          <BrowserRouter>
+            <CookieConsentBanner />
             <Routes>
                <Route element={<AppLayout />}>
                   <Route index element={<Navigate replace to="/home" />} />
@@ -1568,6 +1571,7 @@ function App() {
                      element={<Feature features={features} />}
                   />
                   <Route path="blog" element={<Blog articles={articles} />} />
+                  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                   <Route
                      path="reviews"
                      element={<Reviews galleries={galleries} />}
