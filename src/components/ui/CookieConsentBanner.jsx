@@ -61,7 +61,7 @@ export default function CookieConsentBanner() {
       <div className="fixed bottom-4 right-4 w-20 h-20 bg-white text-black rounded-lg shadow-lg z-50 flex items-center justify-center">
          <button
             onClick={handleAccept}
-            className="bg-green-500 text-white px-2 py-1 text-xs rounded-md"
+            className="bg-green-500 text-black font-semibold px-2 py-1 text-xs rounded-md"
             aria-label="Accept cookies"
          >
             Accept Cookies
