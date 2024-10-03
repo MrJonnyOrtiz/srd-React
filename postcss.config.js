@@ -1,6 +1,7 @@
 export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+   plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+      ...(import.meta.env.MODE === "production" ? { cssnano: {} } : {}), // Minify CSS only in production
+   },
+};
