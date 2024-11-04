@@ -1,0 +1,42 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+   photo-emailer
+
+Transform:
+   - AWS::Serverless-2016-10-31
+
+Globals:
+   Api:
+      Cors:
+         AllowMethods: "'POST'"
+         AllowHeaders: "'Content-Type,X-Amz-Date,X-Amz-Security-Token,Authorization,X-Api-Key,X-Requested-With,Accept,Access-Control-Allow-Methods,Access-Control-Allow-Origin,Access-Control-Allow-Headers'"
+         AllowOrigin: "'*'"
+
+Resources:
+   RequestPhotoShootFunction:
+      Type: AWS::Serverless::Function
+      Properties:
+         Handler: src/handlers/send-email.sendEmailHandler
+         Runtime: nodejs20.x
+         Environment:
+            Variables:
+               SES_SENDER_EMAIL: "jonnyortiz@cloudrealmllc.com" # Update with your verified sender email
+               SES_RECEIVER_EMAIL: "jonnyortiz@cloudrealmllc.com" # Update with your receiver email
+               REGION: "us-east-1" # Update to your AWS region
+         Policies:
+            - Statement:
+                 - Effect: Allow
+                   Action:
+                      - ses:SendEmail
+                   Resource: "*"
+         Events:
+            ApiRequest:
+               Type: Api
+               Properties:
+                  Path: /pics
+                  Method: POST
+
+Outputs:
+   WebEndpoint:
+      Description: "API Gateway endpoint URL for Prod stage"
+      Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"

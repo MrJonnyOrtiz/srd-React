@@ -10,7 +10,9 @@ import Feature from "./components/pages/Feature";
 import Contact from "./components/pages/Contact";
 import Reviews from "./components/pages/Reviews";
 import Blog from "./components/pages/Blog";
+import PhotoShoot from "./components/pages/PhotoShoot";
 import PageNotFound from "./components/pages/PageNotFound";
+import { Toaster } from "react-hot-toast";
 
 const services = [
    {
@@ -1548,11 +1550,12 @@ const articles = [
    },
 ];
 
-function App() {
+export default function App() {
    return (
       <div className="text-white h-dvh">
          <BrowserRouter>
             <CookieConsentBanner />
+            <Toaster />
             <Routes>
                <Route element={<AppLayout />}>
                   <Route index element={<Navigate replace to="/home" />} />
@@ -1576,6 +1579,7 @@ function App() {
                      path="reviews"
                      element={<Reviews galleries={galleries} />}
                   />
+                  <Route path="pics" element={<PhotoShoot />} />
                   <Route path="*" element={<PageNotFound />} />
                </Route>
             </Routes>
@@ -1583,5 +1587,3 @@ function App() {
       </div>
    );
 }
-
-export default App;
