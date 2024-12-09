@@ -1579,7 +1579,9 @@ export default function App() {
                      path="reviews"
                      element={<Reviews galleries={galleries} />}
                   />
+                  {/* NOTE: per Dec 9, 2024 email from Tracy, cancel photography services                  
                   <Route path="pics" element={<PhotoShoot />} />
+                   */}
                   <Route path="*" element={<PageNotFound />} />
                </Route>
             </Routes>
