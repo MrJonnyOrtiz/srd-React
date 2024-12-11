@@ -19,7 +19,7 @@ function Feature({ features }) {
    return (
       <div>
          <h2 className="text-3xl font-bold text-center mt-5 mb-3">
-            Featured Whole House Remodel
+            {features[0].featureName}
          </h2>
 
          {features.map((feature) => (

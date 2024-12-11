@@ -10,7 +10,7 @@ import Feature from "./components/pages/Feature";
 import Contact from "./components/pages/Contact";
 import Reviews from "./components/pages/Reviews";
 import Blog from "./components/pages/Blog";
-import PhotoShoot from "./components/pages/PhotoShoot";
+// import PhotoShoot from "./components/pages/PhotoShoot";
 import PageNotFound from "./components/pages/PageNotFound";
 import { Toaster } from "react-hot-toast";
 
@@ -53,7 +53,7 @@ const services = [
    },
 ];
 
-const features = [
+const featureWholeHouse = [
    {
       id: 1,
       featureName: "Modern Design",
@@ -377,6 +377,195 @@ const features = [
             tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/livingRoomIITN.webp",
             img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/livingRoomII.webp",
             altText: "cozy living space off the kitchen",
+         },
+      ],
+   },
+];
+
+const featureCondo = [
+   {
+      id: 1,
+      featureName: "Elegant Luxury",
+      featureDescription:
+         "This elegant condo on the water has clean lines and luxurious finishes.",
+      featureHeroImg:
+         "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo22.webp",
+
+      images: [
+         {
+            imgId: 1,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo01tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo01.webp",
+            altText: "wine closet",
+         },
+         {
+            imgId: 2,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo02tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo02.webp",
+            altText:
+               "entrance to light wood floors and all-white painted walls",
+         },
+         {
+            imgId: 3,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo03tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo03.webp",
+            altText:
+               "modern, white kitchen with shaker cabinets and gold pulls",
+         },
+         {
+            imgId: 4,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo04tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo04.webp",
+            altText:
+               "inside the modern, white kitchen with shaker cabinets and gold pulls facing the living and dining rooms",
+         },
+         {
+            imgId: 5,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo05tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo05.webp",
+            altText: "pantry with open, wood shelves",
+         },
+         {
+            imgId: 6,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo06tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo06.webp",
+            altText:
+               "dining room with solid, dark wood table and modern plush chairs",
+         },
+         {
+            imgId: 7,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo07tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo07.webp",
+            altText:
+               "open living room with extra large tv, fireplace and sectional coach facing the view of the bay",
+         },
+         {
+            imgId: 8,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo08tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo08.webp",
+            altText:
+               "hallway with a modern console table and louvered closet door",
+         },
+         {
+            imgId: 9,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo09tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo09.webp",
+            altText: "separate office, living space",
+         },
+         {
+            imgId: 10,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo10tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo10.webp",
+            altText: "separate office, living space",
+         },
+         {
+            imgId: 11,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo11tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo11.webp",
+            altText: "bedroom with extra large tv and fireplace facing the bay",
+         },
+         {
+            imgId: 12,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo12tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo12.webp",
+            altText: "bedroom facing the bay",
+         },
+         {
+            imgId: 13,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo13tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo13.webp",
+            altText:
+               "bathroom with extra large shower with 2 rain heads, large soaker tub, and dual vanity",
+         },
+         {
+            imgId: 14,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo14tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo14.webp",
+            altText: "dual vanity with lighted mirror and shaker cabinets",
+         },
+         {
+            imgId: 15,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo15th.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo15.webp",
+            altText: "inside extra large shower with foot step",
+         },
+         {
+            imgId: 16,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo16tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo16.webp",
+            altText: "spacious walk-in closet",
+         },
+         {
+            imgId: 17,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo17tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo17.webp",
+            altText: "secondary bathroom",
+         },
+         {
+            imgId: 18,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo18tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo18.webp",
+            altText: "secondary bathroom view outside of bathroom",
+         },
+         {
+            imgId: 19,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo19tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo19.webp",
+            altText: "laundry room closet combination",
+         },
+         {
+            imgId: 20,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo20tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo20.webp",
+            altText: "outdoor dining area",
+         },
+         {
+            imgId: 21,
+            type: "",
+            orientation: "landscape",
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo21tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/srdCondo21.webp",
+            altText: "outdoor dining area with view of the bay",
          },
       ],
    },
@@ -1570,8 +1759,12 @@ export default function App() {
                   />
                   <Route path="contact" element={<Contact />} />
                   <Route
-                     path="feature"
-                     element={<Feature features={features} />}
+                     path="feature-whole-house"
+                     element={<Feature features={featureWholeHouse} />}
+                  />
+                  <Route
+                     path="feature-condo"
+                     element={<Feature features={featureCondo} />}
                   />
                   <Route path="blog" element={<Blog articles={articles} />} />
                   <Route path="/privacy-policy" element={<PrivacyPolicy />} />
