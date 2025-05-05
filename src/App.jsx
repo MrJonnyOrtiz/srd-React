@@ -579,6 +579,27 @@ const galleries = [
          "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-2022128-IMG_3574.webp",
       galleryImgs: [
          {
+            imgId: 146,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-146tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-146.webp",
+            altText:
+               "Remodeled kitchen with light green custom cabinets, backsplash, double oven, and quartz island countertop.",
+         },
+         {
+            imgId: 145,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-145tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-145.webp",
+            altText:
+               "Remodeled kitchen featuring light green custom cabinets, stainless steel appliances, and a marble island.",
+         },
+         {
+            imgId: 144,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-144tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-144.webp",
+            altText:
+               "Remodeled kitchen with custom light green cabinets and matching marble island.",
+         },
+         {
             imgId: 143,
             tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-143tn.webp",
             img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-143.webp",
