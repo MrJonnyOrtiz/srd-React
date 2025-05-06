@@ -579,6 +579,76 @@ const galleries = [
          "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-2022128-IMG_3574.webp",
       galleryImgs: [
          {
+            imgId: 156,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-156tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-156.webp",
+            altText:
+               "Modern farmhouse kitchen with wood counters, gas range, and patterned backsplash.",
+         },
+         {
+            imgId: 155,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-155tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-155.webp",
+            altText:
+               "Remodeled kitchen with wood floors, two-tone cabinets, and built-in wine fridge.",
+         },
+         {
+            imgId: 154,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-154tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-154.webp",
+            altText:
+               "Spacious kitchen with wood island countertop, glass-front cabinets, and farmhouse sink.",
+         },
+         {
+            imgId: 153,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-153tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-153.webp",
+            altText:
+               "Custom kitchen with light green and white cabinetry, patterned backsplash, and stainless fridge.",
+         },
+         {
+            imgId: 152,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-152tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-152.webp",
+            altText:
+               "Remodeled kitchen with two-tone cabinetry, built-in wine fridge, and stainless appliances.",
+         },
+         {
+            imgId: 151,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-151tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-151.webp",
+            altText:
+               "Kitchen peninsula with wood countertop and white cabinetry in remodeled space.",
+         },
+         {
+            imgId: 150,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-150tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-150.webp",
+            altText:
+               "Remodeled kitchen featuring custom hood, open shelving, and patterned backsplash.",
+         },
+         {
+            imgId: 149,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-149tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-149.webp",
+            altText:
+               "Open-concept kitchen and dining area with custom cabinetry and large windows.",
+         },
+         {
+            imgId: 148,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-148tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-148.webp",
+            altText:
+               "Bright remodeled kitchen with custom hood, patterned backsplash, and farmhouse sink.",
+         },
+         {
+            imgId: 147,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-147tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-147.webp",
+            altText:
+               "Remodeled kitchen with patterned backsplash, farmhouse sink, and custom wood countertops.",
+         },
+         {
             imgId: 146,
             tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-146tn.webp",
             img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/k-146.webp",
@@ -946,6 +1016,76 @@ const galleries = [
       galleryHeroImg:
          "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-IMG_1200.webp",
       galleryImgs: [
+         {
+            imgId: 166,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-166tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-166.webp",
+            altText:
+               "Remodeled bathroom with white shiplap walls, wood ceiling, white console sink with large mirror, and sconces.",
+         },
+         {
+            imgId: 165,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-165tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-165.webp",
+            altText:
+               "Modern bathroom remodel with glass shower, white shiplap, white console sink with large mirror, and wood ceiling.",
+         },
+         {
+            imgId: 164,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-164tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-164.webp",
+            altText:
+               "Updated bathroom with glass shower with blue subway tiles and white shiplap walls leading to laundry room.",
+         },
+         {
+            imgId: 163,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-163tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-163.webp",
+            altText:
+               "Stylish bathroom remodel with vessel sink, patterned mirror, and glass shower with blue subway tiles.",
+         },
+         {
+            imgId: 162,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-162tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-162.webp",
+            altText:
+               "Remodeled bathroom with double vanity, vessel sinks, large mirror, pendant lights, and wood ceiling.",
+         },
+         {
+            imgId: 161,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-161tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-161.webp",
+            altText:
+               "Bathroom renovation with dark blue vanity, vessel sinks, and large mirror.",
+         },
+         {
+            imgId: 160,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-160tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-160.webp",
+            altText:
+               "Bathroom remodel with walk-in shower and freestanding tub under wood ceiling.",
+         },
+         {
+            imgId: 159,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-159tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-159.webp",
+            altText:
+               "Elegant bathroom with dark blue freestanding tub and wood cabinet.",
+         },
+         {
+            imgId: 158,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-158tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-158.webp",
+            altText:
+               "Spacious bathroom remodel with walk-in shower, freestanding tub, and vessel sinks.",
+         },
+         {
+            imgId: 157,
+            tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-157tn.webp",
+            img: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-157.webp",
+            altText:
+               "Updated bathroom with a dark blue vanity, vessel sinks, and wood ceiling detail.",
+         },
          {
             imgId: 135,
             tn: "https://s3.amazonaws.com/sarasotaremodeling.com-images/b-135-IMG_4840tn.webp",
